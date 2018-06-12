@@ -1,17 +1,27 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
-<div>
-    <h1><a href="/">Nayan's Files Online!!</a></h1>
-</div>
+<head>
 
-{% for post in posts %}
-    <div>
-        <p><h1>published: {{ post.published_date }}</p></h1>
-        <h1><a href="">{{ post.title }}</a></h1>
-        <h3><p>{{ post.text|linebreaksbr }}</p></h3>
-    </div>
-{% endfor %}
-<body>
+ <title>Nayan's Files</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+</head>
+ <body>
+        <div>
+            <h1><a href="/">Nayan's Files Online!</a></h1>
+        </div>
 
-</body>
+        {% for post in posts %}
+            <div>
+                
+                <h1><a href="">{{ post.title }}</a></h1>
+                <p><b>published: {{ post.published_date }}</b></p>
+                <h4><p>{{ post.text|linebreaksbr }}</p></h4></div>
+            </div>
+        {% endfor %}
+    </body></body>
+
 </html>

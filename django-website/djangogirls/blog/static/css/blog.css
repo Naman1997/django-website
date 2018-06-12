@@ -1,0 +1,9 @@
+{% load staticfiles %}
+h1 a {
+    color: #FCA205;
+    font-family: 'Lobster';
+}
+
+body {
+    padding-left: 40px;
+}
