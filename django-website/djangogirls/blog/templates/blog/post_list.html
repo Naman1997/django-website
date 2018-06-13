@@ -1,8 +1,6 @@
 {% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
 <head>
     <style>
 .sidenav {
@@ -19,7 +17,6 @@
 
 .sidenav a {
     padding: 6px 8px 6px 16px;
-    text-decoration: none;
     font-size: 30px;
     color: #00477e;
     display: block;
@@ -31,7 +28,7 @@
 
 .main {
     margin-left: 140px; /* Same width as the sidebar + left position in px */
-    font-size: 28px; /* Increased text to enable scrolling */
+     /* Increased text to enable scrolling */
     padding: 0px 10px;
 }
 
@@ -44,26 +41,36 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-        <link href="//fonts.googleapis.com/css?family=Courgette" rel="stylesheet" type="text/css">
-        <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Cookie|Lobster|Satisfy" rel="stylesheet">
 </head>
  <body>
-    <div class="sidenav">
-  <a href="http://127.0.0.1:8000/admin/login/?next=/admin/">Login</a>
-  <a href="#Plant_Kingdom">Plant Kingdom</a>
-  <a href="#clients">Clients</a>
-  <a href="#contact">Contact</a>
+<div class="sidenav">
+
+  <h3><a href="http://127.0.0.1:8000/admin/login/?next=/admin/">Login</a></h3>
+  <h3><a href="#top">Jump to top</a></h3>
+  <h3><a href="#bottom">Jump to last</a></h3>
+
 </div>
         <div>
-            <h1><a href="/">Nayan's Files Online!</a></h1>
+            <center>
+            <h1><a href="#top">Nayan's Files Online!</a></h1>
+             </center>
+            <hr width="500" style="border: 2px dashed #C0C0C0" color="#FFFFFF" size="6">
         {% for post in posts %}
             <div>
-                
+                <center>
                 <h1><a href="">{{ post.title }}</a></h1>
                 <p><b>published: {{ post.published_date }}</b></p>
-                <h4><p>{{ post.text|linebreaksbr }}</p></h4></div>
+                </center>
+                <h2><p>{{ post.text|linebreaksbr }}</p></h2>
+                <hr width="400" style="border: 2px dashed #C0C0C0" color="#FFFFFF" size="6">
             </div>
         {% endfor %}
-    </body></body>
-
+            <center>
+                <h1><a href="#bottom">That's all folks!</a></h1>
+            </center>
+        </div>
+    </body>
+            <hr width="400" style="border: 2px dashed #C0C0C0" color="#FFFFFF" size="6">
+            
 </html>

@@ -1,8 +1,7 @@
 {% load staticfiles %}
 h1 a {
     color: #FCA205;
-    font-family: 'Lobster';
-    font-size: 45px;
+    font-family: 'Satisfy';
     text-align: justify-all;
     box-sizing: border-box;
 }
@@ -14,7 +13,10 @@ body {
 
 
 }
-h4 {
-	font-family: 'Courgette';
-	font-size: 30px;
+h2 {
+	font-family: 'Cookie';
+}
+
+h3 a{
+	font-family: 'Lobster'
 }
