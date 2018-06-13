@@ -3,7 +3,7 @@ Its my first trial with a entirely new framework and web programming in general!
 
 If you wanna run this project then follow the steps:
 1. Download the project as .zip
-2. Delete the djangogirls folder
+2. Delete the djangogirls folder in C:\Users\Naman\django-website-master and keep the dejango-website folder
 3. Open the directory containing manage.py in cmd
 4. Run the command: pip install django
 5. Run the command: python manage.py createsuperuser
