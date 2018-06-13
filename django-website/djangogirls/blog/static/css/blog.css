@@ -2,8 +2,19 @@
 h1 a {
     color: #FCA205;
     font-family: 'Lobster';
+    font-size: 45px;
+    text-align: justify-all;
+    box-sizing: border-box;
 }
 
 body {
-    padding-left: 40px;
+    padding-left: 300px;
+    padding-right: 50px;
+    box-sizing: border-box;
+
+
+}
+h4 {
+	font-family: 'Courgette';
+	font-size: 30px;
 }
